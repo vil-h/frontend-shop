@@ -35,10 +35,10 @@
 <aside class="filters">
 <h2>По задаче</h2>
 <nav aria-label="Категории каталога">
-<a href="#text">Текст и задачи →</a>
-<a href="#images">Изображения →</a>
-<a href="#search">Поиск →</a>
-<a href="#code">Код →</a>
+<a href="#chatgpt">Текст и задачи →</a>
+<a href="#midjourney">Изображения →</a>
+<a href="#perplexity">Поиск →</a>
+<a href="#copilot">Код →</a>
 </nav>
 <fieldset disabled>
 <legend>Фильтры · макет</legend>
@@ -54,8 +54,8 @@
 <p>Фильтрация появится в следующей работе. Сейчас используйте ссылки категорий.</p>
 </aside>
 <div>
-<section class="catalog-section" id="text">
-<h2>Текст и задачи</h2>
+<section class="catalog-section" aria-labelledby="catalog-products-heading">
+<h2 id="catalog-products-heading">Все нейросети</h2>
 <div class="product-grid product-grid--catalog">
 <article class="product-card" id="chatgpt">
 <div class="product-card__visual">
@@ -108,11 +108,6 @@
 </div>
 </div>
 </article>
-</div>
-</section>
-<section class="catalog-section" id="images">
-<h2>Изображения</h2>
-<div class="product-grid product-grid--catalog">
 <article class="product-card" id="midjourney">
 <div class="product-card__visual">
 <img src="images/midjourney.svg" alt="Логотип Midjourney" width="72" height="72" loading="lazy">
@@ -130,11 +125,6 @@
 </div>
 </div>
 </article>
-</div>
-</section>
-<section class="catalog-section" id="search">
-<h2>Поиск</h2>
-<div class="product-grid product-grid--catalog">
 <article class="product-card" id="perplexity">
 <div class="product-card__visual">
 <img src="images/perplexity.svg" alt="Логотип Perplexity" width="72" height="72" loading="lazy">
@@ -152,11 +142,6 @@
 </div>
 </div>
 </article>
-</div>
-</section>
-<section class="catalog-section" id="code">
-<h2>Код</h2>
-<div class="product-grid product-grid--catalog">
 <article class="product-card" id="copilot">
 <div class="product-card__visual">
 <img src="images/copilot.svg" alt="Логотип GitHub Copilot" width="72" height="72" loading="lazy">
