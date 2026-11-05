@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Учебная заявка — Нейробазар</title>
+<meta name="description" content="Форма учебной заявки на нейросеть. Без оплаты и передачи персональных данных.">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js" defer>
+</script>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">К содержимому</a>
+<header class="site-header">
+<div class="container site-header__inner">
+<a class="site-header__logo" href="index.html">нейро<span>базар</span>
+<span class="site-header__note">учебный магазин / КР №1</span>
+</a>
+<nav class="site-nav" aria-label="Основная навигация">
+<a class="site-nav__link" href="index.html">Главная</a>
+<a class="site-nav__link" href="catalog.html">Каталог</a>
+<a class="site-nav__link site-nav__link--active" href="order.html" aria-current="page">Заявка</a>
+<a class="site-nav__link" href="contacts.html">Контакты</a>
+</nav>
+<a class="button button--small" href="catalog.html">Выбрать нейросеть →</a>
+</div>
+</header>
+<main class="container" id="main">
+<section class="page-intro">
+<p class="eyebrow">ПОСЛЕДНИЙ ШАГ В МАКЕТЕ</p>
+<h1>Ваш будущий помощник</h1>
+<p>Попробуйте форму на вымышленных данных. Поля со звёздочкой обязательны.</p>
+</section>
+<div class="order-layout">
+<section>
+<h2>Оформление заявки</h2>
+<form class="order-form" method="dialog">
+<div class="order-form__field">
+<label for="customer">Имя *</label>
+<input id="customer" name="customer" autocomplete="given-name" required minlength="2" placeholder="Как к вам обращаться">
+</div>
+<div class="order-form__field">
+<label for="email">Электронная почта *</label>
+<input id="email" name="email" type="email" autocomplete="email" required placeholder="student@example.com">
+</div>
+<div class="order-form__field">
+<label for="phone">Телефон *</label>
+<input id="phone" name="phone" type="tel" autocomplete="tel" required pattern="[+0-9 ()-]{10,20}" aria-describedby="phone-hint" placeholder="+7 700 000 00 00">
+<small id="phone-hint">От 10 до 20 символов: цифры, пробелы, +, скобки и дефис.</small>
+</div>
+<div class="order-form__field">
+<label for="product">Выбранная нейросеть *</label>
+<select id="product" name="product" required>
+<option value="">Выберите из списка</option>
+<option value="chatgpt">ChatGPT — 6 900 ₸</option>
+<option value="claude">Claude — 7 500 ₸</option>
+<option value="gemini">Gemini — 6 500 ₸</option>
+<option value="midjourney">Midjourney — 9 900 ₸</option>
+<option value="perplexity">Perplexity — 5 900 ₸</option>
+<option value="copilot">GitHub Copilot — 4 900 ₸</option>
+</select>
+</div>
+<div class="order-form__field">
+<label for="comment">Комментарий</label>
+<textarea id="comment" name="comment" rows="4" maxlength="1000" placeholder="Для каких задач ищете инструмент?">
+</textarea>
+</div>
+<label class="order-form__consent" for="consent">
+<input type="checkbox" id="consent" name="consent" value="yes" required> Я согласен с учебными условиями обработки данных: сведения не сохраняются и не отправляются. *</label>
+<button class="button" type="submit">Проверить учебную заявку →</button>
+</form>
+<dialog class="modal" id="result" aria-labelledby="result-title">
+<div class="modal__body">
+<h2 id="result-title">Учебный сценарий завершён</h2>
+<p>Браузер проверил обязательные поля. Заказ не создан, данные не отправлены. Для новой проверки заполните форму ещё раз.</p>
+<form method="dialog">
+<button class="button">Закрыть</button>
+</form>
+<p>
+<a href="catalog.html">Вернуться в каталог →</a>
+</p>
+</div>
+</dialog>
+</section>
+<aside class="order-note">
+<p class="eyebrow">ПЕРЕД ОФОРМЛЕНИЕМ</p>
+<h2>Это тренировка</h2>
+<p>Не вводите настоящие персональные данные. Форма показывает структуру заявки и встроенную HTML-проверку.</p>
+<p>Стоимость вымышленная. Ни один сервис не выдаёт доступ через этот сайт.</p>
+<a href="contacts.html">Остались вопросы? →</a>
+</aside>
+</div>
+</main>
+<footer class="site-footer">
+<div class="container">
+<div class="site-footer__row">
+<a class="site-header__logo" href="index.html">нейробазар</a>
+<a href="index.html#advantages">Наш подход</a>
+<a href="contacts.html">Связаться</a>
+<a href="#top">Наверх ↑</a>
+</div>
+<p>Учебный проект, 2026. Все цены вымышленные и указаны в казахстанских тенге (₸). Продажи, оплата и передача данных не осуществляются. Мы не связаны с владельцами сервисов; названия и логотипы принадлежат их правообладателям.</p>
+</div>
+</footer>
+</body>
+</html>
