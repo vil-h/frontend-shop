@@ -1,0 +1,31 @@
+:root { --bs-success: #236345; --bs-success-rgb: 35,99,69; --bs-link-color: #236345; --bs-link-hover-color: #17492f; --bs-body-color: #202923; --bs-body-bg: #f8f9f6; }
+body { font-family: Arial, Helvetica, sans-serif; }
+a { text-underline-offset: 4px; }
+.brand { color: #202923; font-size: 1.35rem; letter-spacing: -.05em; }
+.brand span { color: #236345; }
+.navbar { z-index: 1030; }
+.navbar .nav-link.active { color: #236345; }
+.btn-success { --bs-btn-bg: #236345; --bs-btn-border-color: #236345; --bs-btn-hover-bg: #17492f; --bs-btn-hover-border-color: #17492f; --bs-btn-active-bg: #17492f; }
+.btn-outline-success { --bs-btn-color: #236345; --bs-btn-border-color: #236345; --bs-btn-hover-bg: #236345; --bs-btn-hover-border-color: #236345; }
+.hero-band { background: #f1f5ee; }
+.hero-panel { background: #e5eee3; border: 1px solid #d5e1d2; border-radius: 1.15rem; }
+.hero-option { display: flex; justify-content: space-between; gap: 1rem; align-items: center; color: #202923; text-decoration: none; border-top: 1px solid #bfcebe; padding: 1rem 0; font-weight: 600; }
+.hero-option:hover { color: #236345; }
+.section-kicker { font-size: .75rem; font-weight: 700; color: #236345; letter-spacing: .12em; }
+.card-image { background: #edf2ec; border-radius: .8rem .8rem 0 0; padding: 1.7rem; min-height: 130px; }
+.product-tile { border: 1px solid #dce2d9; border-radius: .8rem; overflow: hidden; transition: border-color .15s; }
+.product-tile:hover { border-color: #236345; }
+.product-tile .card-body { padding: 1.5rem; }
+.product-tile strong { white-space: nowrap; }
+.about-band { background: #eff3ec; }
+.about-card { background: white; border: 1px solid #dce2d9; border-radius: .9rem; }
+.about-number { display: inline-flex; width: 2.5rem; height: 2.5rem; align-items: center; justify-content: center; background: #e5eee3; color: #236345; border-radius: 50%; font-weight: 700; font-size: .8rem; }
+.action-banner, .order-side { background: #e5eee3; border: 1px solid #d5e1d2; border-radius: .9rem; }
+.detail-visual { min-height: 270px; background: #edf2ec; border: 1px solid #dce2d9; border-radius: 1rem; }
+.form-card { border-radius: 1rem; }
+.form-control:focus, .form-select:focus, .form-check-input:focus { border-color: #236345; box-shadow: 0 0 0 .2rem rgba(35,99,69,.14); }
+.form-check-input:checked { background-color: #236345; border-color: #236345; }
+.accordion-button:not(.collapsed) { background: #e5eee3; color: #17492f; }
+.accordion-button:focus { box-shadow: 0 0 0 .2rem rgba(35,99,69,.14); }
+html { scroll-padding-top: 100px; }
+@media(max-width: 575.98px) { .hero-panel { padding: 1.5rem !important; } .detail-visual { min-height: 200px; } .product-tile .card-body { padding: 1.2rem; } }
