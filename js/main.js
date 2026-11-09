@@ -11,3 +11,11 @@ if (orderForm && modal) {
     if (orderForm.checkValidity()) modal.showModal();
   });
 }
+const contactForm = document.querySelector(".contact-form");
+if (contactForm) {
+  contactForm.addEventListener("submit", event => {
+    event.preventDefault();
+    if (!contactForm.reportValidity()) return;
+    contactForm.querySelector(".contact-form__status").hidden = false;
+  });
+}

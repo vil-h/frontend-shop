@@ -51,6 +51,20 @@
 </p>
 </section>
 <section class="faq">
+<h2>Написать нам</h2>
+<p>Это учебная форма обратной связи. Сообщения не отправляются.</p>
+<form class="contact-form" novalidate>
+<div class="order-form__field">
+<label for="contact-name">Как вас зовут *</label>
+<input id="contact-name" name="contactName" type="text" minlength="2" required autocomplete="off" placeholder="Ваше имя">
+</div>
+<div class="order-form__field">
+<label for="contact-message">Сообщение *</label>
+<textarea id="contact-message" name="contactMessage" rows="3" minlength="5" required placeholder="Что хотите спросить?"></textarea>
+</div>
+<button class="button" type="submit">Проверить сообщение</button>
+<p class="contact-form__status" role="status" aria-live="polite" hidden>Сообщение проверено. Это учебная форма, ничего не отправлено.</p>
+</form>
 <h2>Частые вопросы</h2>
 <details open>
 <summary>Можно ли здесь купить подписку?</summary>

@@ -50,6 +50,9 @@ body { overflow-wrap: anywhere; }
 .specs th, .specs td { padding: 12px; }
 .order-layout, .contact-layout { grid-template-columns: minmax(0, 1fr); gap: 28px; }
 .order-layout > *, .contact-layout > * { min-width: 0; }
+.contact-form label { display: block; margin-bottom: 8px; }
+.contact-form__status { margin-top: 14px; font-size: 14px; font-weight: 600; color: var(--color-primary); }
+.contact-form input, .contact-form textarea { min-height: 44px; font-size: 16px; }
 .order-form input:not([type=checkbox]), .order-form select, .order-form textarea { min-width: 0; min-height: 44px; font-size: 16px; }
 .order-form textarea { min-height: 110px; }
 .order-form__consent { display: flex; align-items: flex-start; gap: 10px; }
