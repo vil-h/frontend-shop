@@ -6,6 +6,7 @@
 <title>Учебная заявка — Нейробазар</title>
 <meta name="description" content="Форма учебной заявки на нейросеть. Без оплаты и передачи персональных данных.">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
 <script src="js/main.js" defer>
 </script>
 </head>
@@ -14,7 +15,7 @@
 <header class="site-header">
 <div class="container site-header__inner">
 <a class="site-header__logo" href="index.html">нейро<span>базар</span>
-<span class="site-header__note">учебный магазин / КР №1</span>
+<span class="site-header__note">учебный магазин / КР №3</span>
 </a>
 <nav class="site-nav" aria-label="Основная навигация">
 <a class="site-nav__link" href="index.html">Главная</a>
@@ -22,6 +23,12 @@
 <a class="site-nav__link site-nav__link--active" href="order.html" aria-current="page">Заявка</a>
 <a class="site-nav__link" href="contacts.html">Контакты</a>
 </nav>
+<details class="mobile-menu"><summary>Меню</summary><nav class="mobile-menu__links" aria-label="Мобильная навигация">
+<a href="index.html">Главная</a>
+<a href="catalog.html">Каталог</a>
+<a href="order.html" aria-current="page">Заявка</a>
+<a href="contacts.html">Контакты</a>
+</nav></details>
 <a class="button button--small" href="catalog.html">Выбрать нейросеть →</a>
 </div>
 </header>
@@ -45,8 +52,8 @@
 </div>
 <div class="order-form__field">
 <label for="phone">Телефон *</label>
-<input id="phone" name="phone" type="tel" autocomplete="tel" required pattern="[+0-9 ()-]{10,20}" aria-describedby="phone-hint" placeholder="+7 700 000 00 00">
-<small id="phone-hint">От 10 до 20 символов: цифры, пробелы, +, скобки и дефис.</small>
+<input id="phone" name="phone" type="tel" autocomplete="tel" required pattern="\+?[0-9 ]{10,20}" aria-describedby="phone-hint" placeholder="+7 700 000 00 00">
+<small id="phone-hint">От 10 до 20 цифр и пробелов; в начале можно указать +.</small>
 </div>
 <div class="order-form__field">
 <label for="product">Выбранная нейросеть *</label>

@@ -6,6 +6,7 @@
 <title>Контакты — Нейробазар</title>
 <meta name="description" content="Контакты учебного проекта Нейробазар и ответы на частые вопросы.">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
 <script src="js/main.js" defer>
 </script>
 </head>
@@ -14,7 +15,7 @@
 <header class="site-header">
 <div class="container site-header__inner">
 <a class="site-header__logo" href="index.html">нейро<span>базар</span>
-<span class="site-header__note">учебный магазин / КР №1</span>
+<span class="site-header__note">учебный магазин / КР №3</span>
 </a>
 <nav class="site-nav" aria-label="Основная навигация">
 <a class="site-nav__link" href="index.html">Главная</a>
@@ -22,6 +23,12 @@
 <a class="site-nav__link" href="order.html">Заявка</a>
 <a class="site-nav__link site-nav__link--active" href="contacts.html" aria-current="page">Контакты</a>
 </nav>
+<details class="mobile-menu"><summary>Меню</summary><nav class="mobile-menu__links" aria-label="Мобильная навигация">
+<a href="index.html">Главная</a>
+<a href="catalog.html">Каталог</a>
+<a href="order.html">Заявка</a>
+<a href="contacts.html" aria-current="page">Контакты</a>
+</nav></details>
 <a class="button button--small" href="catalog.html">Выбрать нейросеть →</a>
 </div>
 </header>
@@ -29,7 +36,7 @@
 <section class="page-intro">
 <p class="eyebrow">НА СВЯЗИ</p>
 <h1>Давайте разберёмся</h1>
-<p>Сайт сделан для КР №1 по фронтенд- и бэкенд-разработке.</p>
+<p>Сайт сделан для КР №3 по фронтенд- и бэкенд-разработке.</p>
 </section>
 <div class="contact-layout">
 <section class="contact-card">
@@ -44,6 +51,20 @@
 </p>
 </section>
 <section class="faq">
+<h2>Написать нам</h2>
+<p>Это учебная форма обратной связи. Сообщения не отправляются.</p>
+<form class="contact-form" novalidate>
+<div class="order-form__field">
+<label for="contact-name">Как вас зовут *</label>
+<input id="contact-name" name="contactName" type="text" minlength="2" required autocomplete="off" placeholder="Ваше имя">
+</div>
+<div class="order-form__field">
+<label for="contact-message">Сообщение *</label>
+<textarea id="contact-message" name="contactMessage" rows="3" minlength="5" required placeholder="Что хотите спросить?"></textarea>
+</div>
+<button class="button" type="submit">Проверить сообщение</button>
+<p class="contact-form__status" role="status" aria-live="polite" hidden>Сообщение проверено. Это учебная форма, ничего не отправлено.</p>
+</form>
 <h2>Частые вопросы</h2>
 <details open>
 <summary>Можно ли здесь купить подписку?</summary>
