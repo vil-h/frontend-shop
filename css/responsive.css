@@ -56,7 +56,7 @@ body { overflow-wrap: anywhere; }
 .order-form input:not([type=checkbox]), .order-form select, .order-form textarea { min-width: 0; min-height: 44px; font-size: 16px; }
 .order-form textarea { min-height: 110px; }
 .order-form__consent { display: flex; align-items: flex-start; gap: 10px; }
-.order-form__consent input { flex-shrink: 0; margin-top: 4px; }
+.order-form__consent input[type="checkbox"] { flex: 0 0 18px; width: 18px; height: 18px; align-self: flex-start; margin: 4px 0 0; }
 .order-note, .contact-card { padding: 24px; }
 .modal { max-height: calc(100dvh - 30px); overflow-y: auto; }
 .modal__body { padding: 24px; }
@@ -70,6 +70,7 @@ body { overflow-wrap: anywhere; }
  .hero { padding-top: 50px; }
  .product-card__badge { position: absolute; top: 18px; right: 18px; margin: 0; }
  .product-card__visual { min-height: 145px; padding: 30px 24px; }
+ .product-card__visual img { width: 72px; height: 72px; }
  .order-form__field { max-width: 100%; }
  .specs { min-width: 0; }
  .product-detail { grid-template-columns: minmax(170px, .75fr) minmax(0, 1.25fr); }

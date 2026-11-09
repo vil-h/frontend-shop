@@ -52,8 +52,8 @@
 </div>
 <div class="order-form__field">
 <label for="phone">Телефон *</label>
-<input id="phone" name="phone" type="tel" autocomplete="tel" required pattern="[+0-9 ()-]{10,20}" aria-describedby="phone-hint" placeholder="+7 700 000 00 00">
-<small id="phone-hint">От 10 до 20 символов: цифры, пробелы, +, скобки и дефис.</small>
+<input id="phone" name="phone" type="tel" autocomplete="tel" required pattern="\+?[0-9 ]{10,20}" aria-describedby="phone-hint" placeholder="+7 700 000 00 00">
+<small id="phone-hint">От 10 до 20 цифр и пробелов; в начале можно указать +.</small>
 </div>
 <div class="order-form__field">
 <label for="product">Выбранная нейросеть *</label>
