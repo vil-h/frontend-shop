@@ -6,6 +6,7 @@
 <title>О нейросетях — Нейробазар</title>
 <meta name="description" content="Возможности и ограничения нейросетей, таблицы характеристик и учебные цены.">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
 <script src="js/main.js" defer>
 </script>
 </head>
@@ -14,7 +15,7 @@
 <header class="site-header">
 <div class="container site-header__inner">
 <a class="site-header__logo" href="index.html">нейро<span>базар</span>
-<span class="site-header__note">учебный магазин / КР №1</span>
+<span class="site-header__note">учебный магазин / КР №3</span>
 </a>
 <nav class="site-nav" aria-label="Основная навигация">
 <a class="site-nav__link" href="index.html">Главная</a>
@@ -22,6 +23,12 @@
 <a class="site-nav__link" href="order.html">Заявка</a>
 <a class="site-nav__link" href="contacts.html">Контакты</a>
 </nav>
+<details class="mobile-menu"><summary>Меню</summary><nav class="mobile-menu__links" aria-label="Мобильная навигация">
+<a href="index.html">Главная</a>
+<a href="catalog.html">Каталог</a>
+<a href="order.html">Заявка</a>
+<a href="contacts.html">Контакты</a>
+</nav></details>
 <a class="button button--small" href="catalog.html">Выбрать нейросеть →</a>
 </div>
 </header>
@@ -32,7 +39,7 @@
 <p>Сравните возможности. Цены и условия ниже — часть учебного макета.</p>
 <section class="product-detail" id="chatgpt-details">
 <div class="product-detail__image">
-<img src="images/chatgpt.svg" alt="Логотип ChatGPT" width="160" height="160">
+<img src="images/chatgpt.svg" srcset="images/chatgpt.svg 160w" sizes="(max-width: 599px) 64px, (max-width: 899px) 72px, 160px" alt="Логотип ChatGPT" width="160" height="160" loading="lazy">
 </div>
 <div>
 <p class="eyebrow">Текст и задачи</p>
@@ -44,7 +51,7 @@
 <a class="button" href="order.html">Оформить заявку →</a>
 <button class="button button--outline" type="button" data-open-dialog>Как работает покупка?</button>
 </div>
-<table class="specs">
+<div class="table-wrapper" role="region" tabindex="0" aria-label="Прокручиваемая таблица характеристик"><table class="specs">
 <caption>Характеристики ChatGPT</caption>
 <thead>
 <tr>
@@ -70,12 +77,12 @@
 <td>Возможны ошибки; возможности зависят от версии и тарифа сервиса</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </div>
 </section>
 <section class="product-detail" id="claude-details">
 <div class="product-detail__image">
-<img src="images/claude.svg" alt="Логотип Claude" width="160" height="160">
+<img src="images/claude.svg" srcset="images/claude.svg 160w" sizes="(max-width: 599px) 64px, (max-width: 899px) 72px, 160px" alt="Логотип Claude" width="160" height="160" loading="lazy">
 </div>
 <div>
 <p class="eyebrow">Текст и задачи</p>
@@ -87,7 +94,7 @@
 <a class="button" href="order.html">Оформить заявку →</a>
 <button class="button button--outline" type="button" data-open-dialog>Как работает покупка?</button>
 </div>
-<table class="specs">
+<div class="table-wrapper" role="region" tabindex="0" aria-label="Прокручиваемая таблица характеристик"><table class="specs">
 <caption>Характеристики Claude</caption>
 <thead>
 <tr>
@@ -113,12 +120,12 @@
 <td>Возможны ошибки; возможности зависят от версии и тарифа сервиса</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </div>
 </section>
 <section class="product-detail" id="gemini-details">
 <div class="product-detail__image">
-<img src="images/gemini.svg" alt="Логотип Gemini" width="160" height="160">
+<img src="images/gemini.svg" srcset="images/gemini.svg 160w" sizes="(max-width: 599px) 64px, (max-width: 899px) 72px, 160px" alt="Логотип Gemini" width="160" height="160" loading="lazy">
 </div>
 <div>
 <p class="eyebrow">Текст и задачи</p>
@@ -130,7 +137,7 @@
 <a class="button" href="order.html">Оформить заявку →</a>
 <button class="button button--outline" type="button" data-open-dialog>Как работает покупка?</button>
 </div>
-<table class="specs">
+<div class="table-wrapper" role="region" tabindex="0" aria-label="Прокручиваемая таблица характеристик"><table class="specs">
 <caption>Характеристики Gemini</caption>
 <thead>
 <tr>
@@ -156,12 +163,12 @@
 <td>Возможны ошибки; возможности зависят от версии и тарифа сервиса</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </div>
 </section>
 <section class="product-detail" id="midjourney-details">
 <div class="product-detail__image">
-<img src="images/midjourney.svg" alt="Логотип Midjourney" width="160" height="160">
+<img src="images/midjourney.svg" srcset="images/midjourney.svg 160w" sizes="(max-width: 599px) 64px, (max-width: 899px) 72px, 160px" alt="Логотип Midjourney" width="160" height="160" loading="lazy">
 </div>
 <div>
 <p class="eyebrow">Изображения</p>
@@ -173,7 +180,7 @@
 <a class="button" href="order.html">Оформить заявку →</a>
 <button class="button button--outline" type="button" data-open-dialog>Как работает покупка?</button>
 </div>
-<table class="specs">
+<div class="table-wrapper" role="region" tabindex="0" aria-label="Прокручиваемая таблица характеристик"><table class="specs">
 <caption>Характеристики Midjourney</caption>
 <thead>
 <tr>
@@ -199,12 +206,12 @@
 <td>Возможны ошибки; возможности зависят от версии и тарифа сервиса</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </div>
 </section>
 <section class="product-detail" id="perplexity-details">
 <div class="product-detail__image">
-<img src="images/perplexity.svg" alt="Логотип Perplexity" width="160" height="160">
+<img src="images/perplexity.svg" srcset="images/perplexity.svg 160w" sizes="(max-width: 599px) 64px, (max-width: 899px) 72px, 160px" alt="Логотип Perplexity" width="160" height="160" loading="lazy">
 </div>
 <div>
 <p class="eyebrow">Поиск</p>
@@ -216,7 +223,7 @@
 <a class="button" href="order.html">Оформить заявку →</a>
 <button class="button button--outline" type="button" data-open-dialog>Как работает покупка?</button>
 </div>
-<table class="specs">
+<div class="table-wrapper" role="region" tabindex="0" aria-label="Прокручиваемая таблица характеристик"><table class="specs">
 <caption>Характеристики Perplexity</caption>
 <thead>
 <tr>
@@ -242,12 +249,12 @@
 <td>Возможны ошибки; возможности зависят от версии и тарифа сервиса</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </div>
 </section>
 <section class="product-detail" id="copilot-details">
 <div class="product-detail__image">
-<img src="images/copilot.svg" alt="Логотип GitHub Copilot" width="160" height="160">
+<img src="images/copilot.svg" srcset="images/copilot.svg 160w" sizes="(max-width: 599px) 64px, (max-width: 899px) 72px, 160px" alt="Логотип GitHub Copilot" width="160" height="160" loading="lazy">
 </div>
 <div>
 <p class="eyebrow">Код</p>
@@ -259,7 +266,7 @@
 <a class="button" href="order.html">Оформить заявку →</a>
 <button class="button button--outline" type="button" data-open-dialog>Как работает покупка?</button>
 </div>
-<table class="specs">
+<div class="table-wrapper" role="region" tabindex="0" aria-label="Прокручиваемая таблица характеристик"><table class="specs">
 <caption>Характеристики GitHub Copilot</caption>
 <thead>
 <tr>
@@ -285,7 +292,7 @@
 <td>Возможны ошибки; возможности зависят от версии и тарифа сервиса</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </div>
 </section>
 <dialog class="modal" aria-labelledby="modal-title">
